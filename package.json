@@ -1,0 +1,32 @@
+{
+  "name": "ai-powered-testing-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:report": "npx playwright show-report reports/html-report",
+    "generate:tests": "node ai-helpers/test-generator/generateTests.js",
+    "generate:bugreport": "node ai-helpers/bug-report-generator/generateBugReport.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KoushikNalaparaju/ai-powered-testing-framework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KoushikNalaparaju/ai-powered-testing-framework/issues"
+  },
+  "homepage": "https://github.com/KoushikNalaparaju/ai-powered-testing-framework#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0"
+  }
+}
